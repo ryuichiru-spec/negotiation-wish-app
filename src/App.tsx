@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { charityOrganizations } from './data/charityOrganizations'
 
 type CharityCategory = keyof typeof charityOrganizations
@@ -268,105 +268,6 @@ const copyPreviewText = async () => {
     window.alert('複製失敗，請手動選取預覽文字')
   }
 }
-
-useEffect(() => {
-  const savedDraft = localStorage.getItem(
-    'negotiation-wish-draft',
-  )
-
-  if (!savedDraft) {
-    return
-  }
-
-  try {
-    const draft = JSON.parse(savedDraft)
-
-setIsFormOpen(true)
-
-    if (typeof draft.subject === 'string') {
-      setSubject(draft.subject)
-    }
-
-    if (typeof draft.supplementCount === 'string') {
-      setSupplementCount(draft.supplementCount)
-    }
-
-    if (typeof draft.templeDonation === 'string') {
-      setTempleDonation(draft.templeDonation)
-    }
-
-    if (typeof draft.incenseDonation === 'string') {
-      setIncenseDonation(draft.incenseDonation)
-    }
-
-    if (typeof draft.charityCategory === 'string') {
-      setCharityCategory(
-        draft.charityCategory as CharityCategory | '',
-      )
-    }
-
-    if (typeof draft.charityOrganization === 'string') {
-      setCharityOrganization(
-        draft.charityOrganization,
-      )
-    }
-
-    if (typeof draft.charityAmount === 'string') {
-      setCharityAmount(draft.charityAmount)
-    }
-
-    if (
-      Array.isArray(draft.scriptures) &&
-      draft.scriptures.length > 0
-    ) {
-      setScriptures(draft.scriptures)
-    }
-
-    if (typeof draft.otherConditions === 'string') {
-      setOtherConditions(draft.otherConditions)
-    }
-
-    if (
-      Array.isArray(draft.notes) &&
-      draft.notes.length > 0
-    ) {
-      setNotes(draft.notes)
-    }
-  } catch {
-    console.error('無法讀取已保存的草稿')
-  }
-}, [])
-
-useEffect(() => {
-  const draft = {
-    subject,
-    supplementCount,
-    templeDonation,
-    incenseDonation,
-    charityCategory,
-    charityOrganization,
-    charityAmount,
-    scriptures,
-    otherConditions,
-    notes,
-  }
-
-  localStorage.setItem(
-    'negotiation-wish-draft',
-    JSON.stringify(draft),
-  )
-}, [
-  subject,
-  supplementCount,
-  templeDonation,
-  incenseDonation,
-  charityCategory,
-  charityOrganization,
-  charityAmount,
-  scriptures,
-  otherConditions,
-  notes,
-])
 
   return (
     <main>
