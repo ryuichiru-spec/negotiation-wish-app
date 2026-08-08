@@ -292,3 +292,59 @@ section h2 + label {
     width: 100%;
   }
 }
+.social-footer {
+  margin-top: 48px;
+  padding-top: 28px;
+  border-top: 1px solid #e2d8cd;
+  text-align: center;
+}
+
+.social-footer-title {
+  margin: 0 0 16px;
+  color: #625a52;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-link-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  min-height: 46px;
+  padding: 10px 20px;
+  border: 1px solid #7b4b37;
+  border-radius: 10px;
+  background: transparent;
+  color: #7b4b37;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.social-link-button:hover {
+  background: #7b4b37;
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .social-footer {
+    margin-top: 40px;
+  }
+
+  .social-links {
+    flex-direction: column;
+  }
+
+  .social-link-button {
+    width: 100%;
+  }
+}

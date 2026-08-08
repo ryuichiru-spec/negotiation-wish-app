@@ -643,6 +643,31 @@ const copyPreviewText = async () => {
 </section>
         </>
       )}
+    <footer className="social-footer">
+  <p className="social-footer-title">
+    小嚕社群連結
+  </p>
+
+  <div className="social-links">
+    <a
+      href="https://www.threads.net/@ryuichiru"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="social-link-button"
+    >
+      Threads
+    </a>
+
+    <a
+      href="https://www.instagram.com/ryuichiru/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="social-link-button"
+    >
+      Instagram
+    </a>
+  </div>
+</footer>
     </main>
   )
 }
