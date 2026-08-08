@@ -348,3 +348,65 @@ section h2 + label {
     width: 100%;
   }
 }
+.usage-guide {
+  margin-top: 28px;
+  padding: 24px;
+}
+
+.usage-guide h2 {
+  margin-bottom: 20px;
+}
+
+.usage-guide-group + .usage-guide-group {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #e8ddd2;
+}
+
+.usage-guide-group p {
+  margin: 0 0 14px;
+  color: #2f2924;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.usage-guide-group ol {
+  margin: 0;
+  padding-left: 1.6rem;
+}
+
+.usage-guide-group li {
+  margin-bottom: 10px;
+  padding-left: 4px;
+  color: #625a52;
+  line-height: 1.8;
+}
+
+.usage-guide-group li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .usage-guide {
+    margin-top: 22px;
+    padding: 20px 16px;
+  }
+
+  .usage-guide-group + .usage-guide-group {
+    margin-top: 22px;
+    padding-top: 20px;
+  }
+
+  .usage-guide-group ol {
+    padding-left: 1.4rem;
+  }
+}
+.start-record-button {
+  margin-top: 28px;
+}
+
+@media (max-width: 767px) {
+  .start-record-button {
+    margin-top: 22px;
+  }
+}

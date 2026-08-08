@@ -277,9 +277,56 @@ const copyPreviewText = async () => {
         記錄與神明洽談的許願、補金、公益捐款、經咒迴向與其他條件。
       </p>
 
+<section className="usage-guide">
+  <h2>使用說明</h2>
+
+  <div className="usage-guide-group">
+    <p>
+      一、此為向神明許願、祈請幫忙處理事情或與冤親債主和解，紀錄需支付條件工具，使用時機如下：
+    </p>
+
+    <ol>
+      <li>
+        向神明許願，神明應允幫忙後詢問是否需支付特定條件或還願條件。
+      </li>
+      <li>
+        向神明許願，神明不應允幫忙，詢問是否可透過支付某些條件獲得應允。
+      </li>
+      <li>
+        確認有冤親債主問題時，確認和解條件。
+      </li>
+    </ol>
+  </div>
+
+  <div className="usage-guide-group">
+    <p>
+      二、下列條件並非全部都需詢問，可自行挑選詢問順序，補充說明如下：
+    </p>
+
+    <ol>
+      <li>
+        向神明確認項目得聖筊後才詢問支付數量。
+      </li>
+      <li>
+        確認完一項支付條件後，須確認是否有其他支付條件。
+      </li>
+      <li>
+        不懂如何問，可逐一詢問是否需要。
+      </li>
+      <li>
+        待確認無其他支付條件或全部皆問完後，可預覽內容，再次像神尊詢問是否能藉此完成請託或和解案件。
+      </li>
+      <li>
+        如最終確認無獲得聖筊，可詢問是否需要增加其他支付項目。
+      </li>
+    </ol>
+  </div>
+</section>
+
       {!isFormOpen ? (
         <button
           type="button"
+          className="start-record-button"
           onClick={() => setIsFormOpen(true)}
         >
           建立新的許願紀錄
