@@ -282,7 +282,7 @@ const copyPreviewText = async () => {
 
   <div className="usage-guide-group">
     <p>
-      一、此為向神明許願、祈請幫忙處理事情或與冤親債主和解，紀錄需支付條件工具，使用時機如下：
+      一、此工具用於向神明許願、祈請幫忙或洽談和解時，紀錄支付條件，使用時機如下：
     </p>
 
     <ol>
