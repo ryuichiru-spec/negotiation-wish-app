@@ -191,7 +191,7 @@ const generatePreviewText = () => {
     charityOrganization &&
     charityAmount
   ) {
-    addSectionTitle('公益組織捐款')
+    addSectionTitle('7-11 ibon 公益組織捐款')
 
     lines.push(`公益類別：${charityCategory}`)
     lines.push(`公益單位：${charityOrganization}`)
@@ -370,7 +370,7 @@ useEffect(() => {
 
   return (
     <main>
-      <h1>談判許願工具</h1>
+      <h1>談判許願紀錄工具</h1>
 
       <p>
         記錄與神明洽談的許願、補金、公益捐款、經咒迴向與其他條件。
@@ -474,7 +474,7 @@ useEffect(() => {
             </select>
           </section>
           <section>
-  <h2>公益組織捐款</h2>
+  <h2>7-11 ibon 公益組織捐款</h2>
 
   <label htmlFor="charityCategory">
     公益類別
